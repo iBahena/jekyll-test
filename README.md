@@ -15,7 +15,7 @@ Deploying to gh-pages command using the default output directory:
 ```
 git gh-deploy
 ```
-By default, the output directory is called 'dist.' This can be replaced with your own output directory name by entering an input parameter.
+By default, the output directory is called 'dist.' This can be replaced with your own output directory name by entering an optional input parameter.
 ```
 git gh-deploy $optionalOutputDirName
 ```

@@ -3,9 +3,13 @@
 #   path = ../.gitconfig
 
 [alias]
-# Deploying to gh-pages command:
-#   git gh-deploy $outputDirName
-# By default, the output directory is called 'dist' but this can be replaced with your own output directory name.
+#
+# Deploying to gh-pages command using the default output directory:
+#   git gh-deploy
+# By default, the output directory is called 'dist.'
+# This can be replaced with your own output directory name by entering an optional input parameter.
+#   git gh-deploy $optionalOutputDirName
+#
     com = !git checkout master
     sto = "!f() { odir=${1-dist}; git subtree split --prefix $odir -b gh-pages; }; f"
     pgh = !git push -f origin gh-pages:gh-pages
