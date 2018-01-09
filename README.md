@@ -11,8 +11,11 @@ git push -f origin gh-pages:gh-pages
 git branch -D gh-pages
 ```
 
-Deploying to gh-pages command:
+Deploying to gh-pages command using the default output directory:
 ```
-git gh-deploy $outputDirName
+git gh-deploy
 ```
-By default, the output directory is called 'dist' but this can be replaced with your own output directory name.
+By default, the output directory is called 'dist.' This can be replaced with your own output directory name by entering an input parameter.
+```
+git gh-deploy $optionalOutputDirName
+```
