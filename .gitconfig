@@ -1,11 +1,10 @@
+# Include this file in .git/config as follows:
+# [include]
+#   path = ../.gitconfig
+
 [alias]
     com = !git checkout master
     sto = "!f() { odir=${1-dist}; git subtree split --prefix $odir -b gh-pages; }; f"
-    test = !git subtree split --prefix dist -b gh-pages
     pgh = !git push -f origin gh-pages:gh-pages
     dgh = !git branch -D gh-pages
     gh-deploy = "!f() { git com && git sto $1 && git pgh && git dgh; }; f"
-    test2 = !git com && git sto && git pgh && git dgh
-
-    in = "!f() { echo $3 $2 $1; }; f"
-    dir = "!f() { odir=${1-dist}; echo $odir;  }; f"
