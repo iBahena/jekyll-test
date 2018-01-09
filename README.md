@@ -1,4 +1,4 @@
-# jekyll-test
+# Jekyll Deployment To GitHub Pages
 
 This is an example to deploy Jekyll to GitHub Pages from a subdirectory. Custom commands are specified in the .gitconfig file.
 
