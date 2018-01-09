@@ -19,3 +19,5 @@ By default, the output directory is called 'dist.' This can be replaced with you
 ```
 git gh-deploy $optionalOutputDirName
 ```
+
+<a href='https://ibahena.github.io/jekyll-test/'>>> Preview here <<</a>
